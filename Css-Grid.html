@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(9,1fr);
+            width: 60%;
+            margin: auto;
+            font-size: 1.3rem;
+            font-weight: bold;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: blue;
+            padding: 25px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .item{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .aside {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 8;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">Header</div>
+        <div class="item">Article 1</div>
+        <div class="item">Article 2</div>
+        <div class="item">Article 3</div>
+        <div class="item">Article 4</div>
+        <div class="item">Article 5</div>
+        <div class="item">Article 6</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
